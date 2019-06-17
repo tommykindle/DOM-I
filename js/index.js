@@ -52,3 +52,5 @@ anchorTag[3].textContent = 'Features'
 anchorTag[4].textContent = 'About'
 anchorTag[5].textContent = 'Contact'
 
+anchorTag.forEach(anchorTag => (anchorTag.style.color = 'Green'));
+
