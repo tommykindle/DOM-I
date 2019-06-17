@@ -64,8 +64,28 @@ anchorTag.forEach(anchorTag => (anchorTag.style.color = 'Green'));
 
 //CTA
 
-let h1 = document.getElementsByClassName('cta-text'); 
-h1.setAttribute('h1',siteContent)['cta']['h1']
+let ctaH1 = document.querySelector('.cta h1'); 
+
+ctaH1.textContent = siteContent.cta.h1;
+
+let ctaButton = document.querySelector('.cta button')
+
+ctaButton.textContent = siteContent.cta.button; 
+
+//top content
+
+let featuresH4 = document.querySelector('.top-content h4:nth-child(1)'); 
+
+featuresH4.textContent = siteContent["main-content"]["features-h4"]; 
+
+let featuresP = document.querySelector('.top-content p'); 
+
+featuresP.textContent = siteContent["main-content"]["features-content"]; 
+
+let aboutH4 = document.querySelector('.top-content  h4:nth-child(2)')
+
+aboutH4.textContent = siteContent["main-content"]["about-h4"]; 
+
 
 
 
