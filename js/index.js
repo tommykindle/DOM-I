@@ -38,5 +38,54 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+//Images
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+let middleImg= document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//Nav Bar
+let nav = document.querySelector('nav')
+let anchorTag = document.querySelectorAll('a')
+
+anchorTag[0].textContent = 'Services'
+anchorTag[1].textContent = 'Product'
+anchorTag[2].textContent = 'Vision'
+anchorTag[3].textContent = 'Features'
+anchorTag[4].textContent = 'About'
+anchorTag[5].textContent = 'Contact'
+
+anchorTag.forEach(anchorTag => (anchorTag.style.color = 'Green'));
+
+//CTA
+
+let ctaH1 = document.querySelector('.cta h1'); 
+
+ctaH1.textContent = siteContent.cta.h1;
+
+let ctaButton = document.querySelector('.cta button')
+
+ctaButton.textContent = siteContent.cta.button; 
+
+//top content
+
+let featuresH4 = document.querySelector('.top-content h4:nth-child(1)'); 
+
+featuresH4.textContent = siteContent["main-content"]["features-h4"]; 
+
+let featuresP = document.querySelector('.top-content p'); 
+
+featuresP.textContent = siteContent["main-content"]["features-content"]; 
+
+let aboutH4 = document.querySelector('.top-content  h4:nth-child(2)')
+
+aboutH4.textContent = siteContent["main-content"]["about-h4"]; 
+
+
+
+
